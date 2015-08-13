@@ -8,14 +8,14 @@ import java.io.File;
 
 /**
  * Created by disanyun on 2015/7/23 0023.
- * ÏµÍ³·şÎñ¹¤¾ßÀà
+ * ç³»ç»ŸæœåŠ¡å·¥å…·ç±»
  */
 public class LASystemServiceUtil {
 
     /**
-     * Æô¶¯APK°²×°Ò³Ãæ
-     * @param context ÉÏÏÂÎÄ¶ÔÏó
-     * @param apkFile °²×°°üÎÄ¼ş¶ÔÏó
+     * å¯åŠ¨APKå®‰è£…é¡µé¢
+     * @param context ä¸Šä¸‹æ–‡å¯¹è±¡
+     * @param apkFile å®‰è£…åŒ…æ–‡ä»¶å¯¹è±¡
      */
     public static void installApk(Context context,File apkFile ) {
         if (!apkFile.exists()) {

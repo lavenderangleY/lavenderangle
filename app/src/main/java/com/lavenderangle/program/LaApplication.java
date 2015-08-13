@@ -7,7 +7,7 @@ import android.app.Application;
  */
 public class LaApplication extends Application {
     /**
-     * 是否正在下载
+     * 鏄惁姝ｅ湪涓嬭浇
      */
     private boolean isDownloading = false;
 

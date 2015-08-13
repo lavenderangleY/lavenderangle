@@ -9,15 +9,15 @@ import android.widget.Toast;
 /**
  * Created by disanyun on 2015/7/9 0009.
  *
- * ×Ô¶¨ÒåToast¹¤¾ßÀà
+ * è‡ªå®šä¹‰Toastå·¥å…·ç±»
  */
 public class LAToastUtil {
     /**
-     * ÉÏÏÂÎÄ¶ÔÏó
+     * ä¸Šä¸‹æ–‡å¯¹è±¡
      */
     private static Context mContext = null;
     /**
-     * ÏÔÊ¾Toast
+     * æ˜¾ç¤ºToast
      */
     private static final int SHOW = 101;
 
@@ -34,7 +34,7 @@ public class LAToastUtil {
     });
 
     /**
-     * ToastÌáÊ¾ÎÄ±¾ĞÅÏ¢
+     * Toastæç¤ºæ–‡æœ¬ä¿¡æ¯
      * @param context
      * @param text
      */
@@ -46,9 +46,9 @@ public class LAToastUtil {
     }
 
     /**
-     * ToastÌáÊ¾ÎÄ±¾
+     * Toastæç¤ºæ–‡æœ¬
      * @param context
-     * @param resId  ÎÄ±¾×ÊÔ´ID
+     * @param resId  æ–‡æœ¬èµ„æºID
      */
     public static void showToast(Context context,int resId){
         mContext = context;
@@ -56,9 +56,9 @@ public class LAToastUtil {
     }
 
     /**
-     * ÔÚÏß³ÌÖĞÌáÊ¾ÎÄ±¾ĞÅÏ¢
+     * åœ¨çº¿ç¨‹ä¸­æç¤ºæ–‡æœ¬ä¿¡æ¯
      * @param context
-     * @param string  ÎÄ±¾
+     * @param string  æ–‡æœ¬
      */
     public static void showToastInThread(Context context , String string ){
         mContext = context;
@@ -70,9 +70,9 @@ public class LAToastUtil {
     }
 
     /**
-     * ÔÚÏß³ÌÖĞÌáÊ¾ÎÄ±¾
+     * åœ¨çº¿ç¨‹ä¸­æç¤ºæ–‡æœ¬
      * @param context
-     * @param resId ÎÄ±¾×ÊÔ´ID
+     * @param resId æ–‡æœ¬èµ„æºID
      */
     public static void showToastInThread(Context context, int resId){
         showToastInThread(context, "" + context.getString(resId));

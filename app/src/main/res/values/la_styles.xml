@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- ProgressLoading的主题 -->
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@drawable/la_progress_loading_bg</item>
+    </style>
+
+</resources>

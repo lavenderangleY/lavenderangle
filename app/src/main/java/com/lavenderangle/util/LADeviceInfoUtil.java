@@ -12,21 +12,21 @@ import android.view.WindowManager;
 
 /**
  * Created by disanyun on 2015/7/13 0013.
- * Éè±¸ĞÅÏ¢»ñÈ¡¹¤¾ßÀà
+ * è®¾å¤‡ä¿¡æ¯è·å–å·¥å…·ç±»
  */
 public class LADeviceInfoUtil {
 
     /**
-     * »ñÈ¡MacµØÖ·
+     * è·å–Macåœ°å€
      * @param context
      * @return
      */
     public static String getMac(Context context) {
         try {
-            // »ñÈ¡wifi·şÎñ
+            // è·å–wifiæœåŠ¡
             WifiManager wifiManager = (WifiManager) context
                     .getSystemService(Context.WIFI_SERVICE);
-            // ÅĞ¶ÏwifiÊÇ·ñ¿ªÆô
+            // åˆ¤æ–­wifiæ˜¯å¦å¼€å¯
             if (!wifiManager.isWifiEnabled()) {
                 return "aa:22:33:44:%5";
                 // wifiManager.setWifiEnabled(true);
@@ -41,16 +41,16 @@ public class LADeviceInfoUtil {
     }
 
     /**
-     * »ñÈ¡iPµØÖ·
+     * è·å–iPåœ°å€
      * @param context
      * @return
      */
     public static String getIp(Context context) {
-        // // »ñÈ¡wifi·şÎñ
+        // // è·å–wifiæœåŠ¡
         try {
             WifiManager wifiManager = (WifiManager) context
                     .getSystemService(Context.WIFI_SERVICE);
-            // ÅĞ¶ÏwifiÊÇ·ñ¿ªÆô
+            // åˆ¤æ–­wifiæ˜¯å¦å¼€å¯
             if (!wifiManager.isWifiEnabled()) {
                 // wifiManager.setWifiEnabled(true);
                 return "10.0.0.1";
@@ -68,7 +68,7 @@ public class LADeviceInfoUtil {
     }
 
     /**
-     * »ñÈ¡Éè±¸imeiºÅ
+     * è·å–è®¾å¤‡imeiå·
      * @param context
      * @return
      */
@@ -80,7 +80,7 @@ public class LADeviceInfoUtil {
     }
 
     /**
-     * »ñÈ¡Éè±¸Æ·ÅÆ
+     * è·å–è®¾å¤‡å“ç‰Œ
      * @param context
      * @return
      */
@@ -89,7 +89,7 @@ public class LADeviceInfoUtil {
     }
 
     /**
-     * »ñÈ¡Éè±¸²Ù×÷ÏµÍ³
+     * è·å–è®¾å¤‡æ“ä½œç³»ç»Ÿ
      * @return
      */
     public static String getOs() {
@@ -97,7 +97,7 @@ public class LADeviceInfoUtil {
     }
 
     /**
-     * »ñÈ¡Éè±¸·Ö±æÂÊ
+     * è·å–è®¾å¤‡åˆ†è¾¨ç‡
      * @param context
      * @return
      */
@@ -110,7 +110,7 @@ public class LADeviceInfoUtil {
     }
 
     /**
-     * »ñÈ¡Éè±¸ÆÁÄ»ÃÜ¶È
+     * è·å–è®¾å¤‡å±å¹•å¯†åº¦
      * @param context
      * @return
      */
@@ -123,7 +123,7 @@ public class LADeviceInfoUtil {
     }
 
     /**
-     * »ñÈ¡Éè±¸ÆÁÄ»¿í¶È
+     * è·å–è®¾å¤‡å±å¹•å®½åº¦
      * @param context
      * @return
      */
@@ -136,7 +136,7 @@ public class LADeviceInfoUtil {
     }
 
     /**
-     * »ñÈ¡Éè±¸ÆÁÄ»¸ß¶È
+     * è·å–è®¾å¤‡å±å¹•é«˜åº¦
      * @param context
      * @return
      */
@@ -149,7 +149,7 @@ public class LADeviceInfoUtil {
     }
 
     /**
-     * »ñÈ¡ÔËÓªÉÌ
+     * è·å–è¿è¥å•†
      * @param context
      * @return
      */
@@ -161,7 +161,7 @@ public class LADeviceInfoUtil {
     }
 
     /**
-     * »ñÈ¡Éè±¸ÍøÂçÀàĞÍ ÁªÍ¨µÄ3GÎªUMTS»òHSDPA£¬ÒÆ¶¯ºÍÁªÍ¨µÄ2GÎªGPRS»òEDGE£¬µçĞÅµÄ2GÎªCDMA£¬µçĞÅµÄ3GÎªEVDO
+     * è·å–è®¾å¤‡ç½‘ç»œç±»å‹ è”é€šçš„3Gä¸ºUMTSæˆ–HSDPAï¼Œç§»åŠ¨å’Œè”é€šçš„2Gä¸ºGPRSæˆ–EDGEï¼Œç”µä¿¡çš„2Gä¸ºCDMAï¼Œç”µä¿¡çš„3Gä¸ºEVDO
      * @param context
      * @return  "WIFI","2G","3G","4G"
      */

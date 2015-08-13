@@ -9,11 +9,11 @@ import java.io.InputStreamReader;
 
 /**
  * Created by disanyun on 2015/7/23 0023.
- * ´æ´¢¿¨¹¤¾ßÀà
- * ĞèÒªÅäÖÃ´æ´¢¿¨È¨ÏŞ
- * <!--ÔÚSDCardÖĞ´´½¨ÓëÉ¾³ıÎÄ¼şÈ¨ÏŞ -->
+ * å­˜å‚¨å¡å·¥å…·ç±»
+ * éœ€è¦é…ç½®å­˜å‚¨å¡æƒé™
+ * <!--åœ¨SDCardä¸­åˆ›å»ºä¸åˆ é™¤æ–‡ä»¶æƒé™ -->
  * <uses-permissioandroid:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
- * <!--ÍùSDCardĞ´ÈëÊı¾İÈ¨ÏŞ -->
+ * <!--å¾€SDCardå†™å…¥æ•°æ®æƒé™ -->
  * <uses-permissionandroid:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
  */
 public class LASDCardUtil {
@@ -21,7 +21,7 @@ public class LASDCardUtil {
     private static final String TAG = "LASDCardUtil";
 
     /**
-     * »ñÈ¡ÄÚ´æ¿¨µÄÂ·¾¶
+     * è·å–å†…å­˜å¡çš„è·¯å¾„
      * @return
      */
     public static String  getSdcardPath(){
@@ -32,7 +32,7 @@ public class LASDCardUtil {
     }
 
     /**
-     * SD¿¨·ÇÕı³£¹ÒÔØÊ±,»ñÈ¡ÄÚ´æ¿¨µÄÂ·¾¶
+     * SDå¡éæ­£å¸¸æŒ‚è½½æ—¶,è·å–å†…å­˜å¡çš„è·¯å¾„
      * @return
      */
     private static  String getPath() {
@@ -43,7 +43,7 @@ public class LASDCardUtil {
         if (sd_default.endsWith("/")) {
             sd_default = sd_default.substring(0, sd_default.length() - 1);
         }
-        // µÃµ½Â·¾¶
+        // å¾—åˆ°è·¯å¾„
         try {
             Runtime runtime = Runtime.getRuntime();
             Process proc = runtime.exec("mount");

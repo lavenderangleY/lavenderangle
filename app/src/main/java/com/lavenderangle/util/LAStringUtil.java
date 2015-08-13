@@ -2,12 +2,12 @@ package com.lavenderangle.util;
 
 /**
  * Created by disanyun on 2015/7/13 0013.
- * ×Ö·û´®¹¤¾ßÀà
+ * å­—ç¬¦ä¸²å·¥å…·ç±»
  */
 public class LAStringUtil {
 
     /**
-     * ÅĞ¶Ï×Ö·û´®ÊÇ·ñÎªnull»òÕß¿ÕÖµ
+     * åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦ä¸ºnullæˆ–è€…ç©ºå€¼
      * @return
      */
     public  static  boolean isEmpty(String string){
