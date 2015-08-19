@@ -1,4 +1,4 @@
-package com.lavenderangle.program;
+package com.lavenderangle.program.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -13,12 +13,14 @@ import com.lavenderangle.dialog.ProgressLoading;
  */
 public abstract class BaseActivity extends Activity{
 
-    protected final String TAG = "" + getClass().getSimpleName();
+    protected static  String TAG = "";
     protected ProgressLoading loading = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TAG =  "" + getClass().getSimpleName();
+        beforeSetView();
         boolean isSuccess = setContentView();
         if (isSuccess){
             initViews();
@@ -45,6 +47,12 @@ public abstract class BaseActivity extends Activity{
         }
         return false;
     }
+
+    /**
+     * 在setContentView之前的操作
+     * @return
+     */
+    public abstract void beforeSetView();
 
     /**
      * 设置当前Activity需要加载的布局，必须是int类型或者View类型

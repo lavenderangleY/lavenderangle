@@ -8,11 +8,11 @@ import com.lavenderangle.service.callback.DownloadCallback;
  * Created by disanyun on 2015/7/23 0023.
  */
 public class DownloadBinder extends Binder{
-    private  DownloadCallback callback;//下载中的回调方法
-    private  String downloadUrl;//下载地址
-    private  String  savePath;//下载后的保存地址
+    private  DownloadCallback callback;//涓嬭浇涓殑鍥炶皟鏂规硶
+    private  String downloadUrl;//涓嬭浇鍦板潃
+    private  String  savePath;//涓嬭浇鍚庣殑淇濆瓨鍦板潃
     /**
-     * 是否取消下载
+     * 鏄惁鍙栨秷涓嬭浇
      */
     private boolean canceled = false;
 

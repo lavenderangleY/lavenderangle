@@ -1,5 +1,7 @@
 package com.lavenderangle.util;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.TimeZone;
 
 /**
@@ -44,5 +46,17 @@ public class LADateUtil {
             builder.append('0');
         }
         builder.append(string);
+    }
+
+
+    /**
+     * 获取当前时间
+     * @param pattern 格式可以为yyyyMMddHHmmss，yyyy-MM-dd HH:mm:ss等
+     * @return
+     */
+    public static String getCurrentTime(String pattern){
+        SimpleDateFormat sdf = new SimpleDateFormat(pattern);
+        Date now = new Date();
+        return sdf.format(now);
     }
 }
