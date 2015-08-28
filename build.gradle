@@ -1,0 +1,23 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    /**
+     * 声明了android gradle plugin的版本，android studio 1.0正式版必须要求支持gradle plugin 1.0的版本。
+     */
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.2.3'
+    }
+}
+
+/**
+ * 一个是声明仓库的源，这里可以看到是指明的jcenter(), 之前版本则是mavenCentral(),
+ * jcenter可以理解成是一个新的中央远程仓库，兼容maven中心仓库，而且性能更优。
+ */
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
